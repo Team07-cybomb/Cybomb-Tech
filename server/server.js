@@ -33,7 +33,7 @@ app.use(cors({
       callback(new Error(`Not allowed by CORS: ${origin}`));
     }
   },
-  methods: ['GET', 'POST', 'OPTIONS'],
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
   credentials: true,
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
@@ -53,6 +53,7 @@ const careerMailRoute = require("./routes/careerMailRoute");
 const footerMailRoute = require("./routes/footermail")
 const adminRoutes = require("./routes/adminRoutes");
 const adminRegisterRoute = require("./routes/adminRegister");
+const blogRoute = require("./routes/blogRoute");
 
 // Health check route
 app.get('/api/health', (req, res) => {
@@ -74,6 +75,8 @@ app.use("/api/career", careerMailRoute);
 app.use("/api/footer-mail",footerMailRoute);
 app.use("/admin", adminRegisterRoute);
 app.use("/uploads", express.static("public/uploads"));
+app.use("/uploads/blog", express.static(path.join(__dirname, "public/uploads/blog")));
+app.use("/api/blogs", blogRoute);
 
 
  

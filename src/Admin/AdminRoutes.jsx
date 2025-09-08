@@ -5,6 +5,7 @@ import ProtectedRoute from "./ProtectedRoute";
 import AdminHome from "./pages/Home";
 import FormSubmission from "./pages/Form-submission/Form-submission";
 import CareerPage from "./pages/Career-Page/Career-Page";
+import AdminBlog from "./pages/Blog/admin-blog";
 
 const AdminRoutes = (
   <>
@@ -25,6 +26,8 @@ const AdminRoutes = (
       <Route path="home" element={<AdminHome />} />
       <Route path="form-submission" element={<FormSubmission/>} />
        <Route path="career-page" element={<CareerPage/>} />
+       <Route path="admin-blog" element={<AdminBlog/>} />
+       
       
         {/* /admin/home */}
     </Route>

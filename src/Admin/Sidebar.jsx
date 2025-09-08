@@ -48,7 +48,7 @@ function Sidebar() {
           </li>
           <li className="my-2">
             <Link
-              to="/admin/blog"
+              to="/admin/admin-blog"
               className="text-white text-decoration-none d-block p-2 rounded hover-bg-light"
             >
               <i className="fas fa-blog me-2"></i>Blog Management

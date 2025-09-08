@@ -75,7 +75,7 @@ export default function ChatWidget() {
           <div className={styles.chatHeader}>
             <div className={styles.headerContent}>
               <div className={styles.avatar}>
-                <span className={styles.avatarText}>CB</span>
+                <span className={styles.avatarText}><img src="/images/logo-11.png" alt="" style={{width:"40px"}}/></span>
               </div>
               <div className={styles.headerText}>
                 <div className={styles.companyName}>Cybomb Technologies</div>

@@ -145,7 +145,7 @@ function Nav1() {
                   </Link>
                 </li>
 
-                 <li className={styles.navItem}>
+                 {/* <li className={styles.navItem}>
                   <Link
                     to="/pricing"
                     className={styles.navLink}
@@ -154,7 +154,7 @@ function Nav1() {
                     Pricing
                    
                   </Link>
-                </li>
+                </li> */}
                 <li className={styles.navItem}>
                   <Link
                     to="/career"
